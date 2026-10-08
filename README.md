@@ -16,7 +16,8 @@ Requirements: an Apple Silicon Mac with macOS 13 Ventura or later. Intel Macs ar
 2. Double-click `Install Ergominder.command` once. macOS may block it.
 3. Open **System Settings > Privacy & Security** and scroll to **Security**.
 4. Click **Open Anyway** for `Install Ergominder.command`, enter your Mac password if asked, then confirm **Open**.
-5. Choose your reminder schedule and click **Save**.
+5. macOS may then block Ergominder itself. Return to **Privacy & Security**, click **Open Anyway** for Ergominder, and confirm **Open**.
+6. Choose your reminder schedule and click **Save**.
 
 Do not disable Gatekeeper. Apple explains this one-app exception in [Safely open apps on your Mac](https://support.apple.com/102445).
 
