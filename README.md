@@ -6,13 +6,13 @@ Ergominder is a small macOS menu-bar app that reminds you to take short, guided 
 
 ## Download
 
-[Download Ergominder 1.0.0 for Apple Silicon](https://github.com/cipshadow/ergominder/releases/download/v1.0.0/Ergominder-Install-v1.0.0.zip)
+[Download Ergominder 1.0.1 for Apple Silicon](https://github.com/cipshadow/ergominder/releases/download/v1.0.1/Ergominder-Install-v1.0.1.zip)
 
 Requirements: an Apple Silicon Mac with macOS 13 Ventura or later. Intel Macs are not supported.
 
 ## Install
 
-1. Download and unzip `Ergominder-Install-v1.0.0.zip`.
+1. Download and unzip `Ergominder-Install-v1.0.1.zip`.
 2. Double-click `Install Ergominder.command` once. macOS may block it.
 3. Open **System Settings > Privacy & Security** and scroll to **Security**.
 4. Click **Open Anyway** for `Install Ergominder.command`, enter your Mac password if asked, then confirm **Open**.
