@@ -55,7 +55,7 @@ Ergominder has no account, analytics, advertising, or network code. It stores yo
 
 1. Choose **Quit Ergominder** from its menu-bar menu.
 2. In **System Settings > General > Login Items**, remove Ergominder if it appears.
-3. Move `~/Applications/Ergominder.app` to the Trash.
+3. Move `/Applications/Ergominder.app` to the Trash.
 
 To remove its settings and local counts too, run:
 
