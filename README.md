@@ -6,22 +6,22 @@ Ergominder is a small macOS menu-bar app that reminds you to take short, guided 
 
 ## Download
 
-[Download Ergominder 1.0.1 for Apple Silicon](https://github.com/cipshadow/ergominder/releases/download/v1.0.1/Ergominder-Install-v1.0.1.zip)
+Download the universal macOS disk image and its matching `SHA256SUMS.txt` file from the repository's [Releases page](https://github.com/cipshadow/ergominder/releases). Use the assets from the same release.
 
-Requirements: an Apple Silicon Mac with macOS 13 Ventura or later. Intel Macs are not supported.
+Requirements: macOS 13 Ventura or later on an Apple Silicon or Intel Mac. Each release contains one universal app, so there is no separate download for your processor.
 
 ## Install
 
-1. Download and unzip `Ergominder-Install-v1.0.1.zip`.
-2. Double-click `Install Ergominder.command` once. macOS may block it.
-3. Open **System Settings > Privacy & Security** and scroll to **Security**.
-4. Click **Open Anyway** for `Install Ergominder.command`, enter your Mac password if asked, then confirm **Open**.
-5. macOS may then block Ergominder itself. Return to **Privacy & Security**, click **Open Anyway** for Ergominder, and confirm **Open**.
+1. Open the downloaded Ergominder disk image.
+2. Drag `Ergominder.app` to the Applications folder shortcut in the disk-image window.
+3. Eject the disk image.
+4. Open your Applications folder.
+5. Control-click `Ergominder`, choose **Open**, then choose **Open** again in the warning. You need to do this once for each new downloaded version.
 6. Choose your reminder schedule and click **Save**.
 
-Do not disable Gatekeeper. Apple explains this one-app exception in [Safely open apps on your Mac](https://support.apple.com/102445).
+If **Open** is unavailable, try opening Ergominder normally once, then go to **System Settings > Privacy & Security** and choose **Open Anyway**. Do not disable Gatekeeper. Apple explains this one-app exception in [Safely open apps on your Mac](https://support.apple.com/102445).
 
-Ergominder is ad hoc signed because it is published without an Apple Developer Program membership. It is not notarized or verified by Apple, so macOS shows the warning above. Download it only from this repository.
+Ergominder is distributed without an Apple Developer ID certificate and is not notarized by Apple, so macOS shows the warning above. Download it only from this repository's Releases page.
 
 ## Use
 
@@ -38,14 +38,14 @@ Enable **Start Ergominder at login** in Settings if you want it to launch automa
 
 ## Verify the download
 
-The release includes `SHA256SUMS.txt`. To check that the ZIP downloaded without changing, put both files in the same folder and run:
+Each release includes `SHA256SUMS.txt`. To check that the disk image downloaded without changing, place both files in the same folder and run:
 
 ```sh
 cd /path/to/the/download/folder
 shasum -a 256 -c SHA256SUMS.txt
 ```
 
-The result should end with `OK`. The checksum detects a changed or incomplete download; it does not replace Apple's Developer ID and notarization checks.
+The line for the downloaded disk image should end with `OK`. The checksum detects a changed or incomplete download; it does not replace Apple's Developer ID and notarization checks.
 
 ## Privacy
 
@@ -55,7 +55,7 @@ Ergominder has no account, analytics, advertising, or network code. It stores yo
 
 1. Choose **Quit Ergominder** from its menu-bar menu.
 2. In **System Settings > General > Login Items**, remove Ergominder if it appears.
-3. Move `~/Applications/Ergominder.app` to the Trash.
+3. Move `/Applications/Ergominder.app` to the Trash.
 
 To remove its settings and local counts too, run:
 
