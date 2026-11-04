@@ -1,27 +1,43 @@
 # Ergominder
 
-Ergominder is a small macOS menu-bar app that reminds you to take short, guided stretch breaks. You choose the days, hours, frequency, sound, and number of stretches. Everything stays on your Mac.
+Ergominder is a macOS menu-bar app that reminds you to take short, guided stretch breaks. You choose the days, hours, frequency, sound, and number of stretches. Everything stays on your Mac.
+
+Requirements: macOS 13 Ventura or later, on an Apple Silicon or Intel Mac. Each release is one universal app, so there is no separate download for your processor.
 
 ![Ergominder settings](assets/ergominder-settings.png)
 
-## Download
+## Installing
 
-Download the universal macOS disk image and its matching `SHA256SUMS.txt` file from the repository's [Releases page](https://github.com/cipshadow/ergominder/releases). Use the assets from the same release.
+1. Download the latest release from the [GitHub Releases page](https://github.com/cipshadow/ergominder/releases). Use the disk image (the `.dmg` file) from that release. The matching `SHA256SUMS.txt` file is there too if you want to check the download later.
+2. Open the disk image and drag `Ergominder.app` to the Applications folder. Eject the disk image when that is done.
+3. Open Ergominder from your Applications folder.
 
-Requirements: macOS 13 Ventura or later on an Apple Silicon or Intel Mac. Each release contains one universal app, so there is no separate download for your processor.
+The first time you open it, macOS says it can't verify the developer and will not launch the app. That message is expected. Allow Ergominder once for each new downloaded version. Do not turn off Gatekeeper.
 
-## Install
+**macOS 15 Sequoia and later**
 
-1. Open the downloaded Ergominder disk image.
-2. Drag `Ergominder.app` to the Applications folder shortcut in the disk-image window.
-3. Eject the disk image.
-4. Open your Applications folder.
-5. Control-click `Ergominder`, choose **Open**, then choose **Open** again in the warning. You need to do this once for each new downloaded version.
-6. Choose your reminder schedule and click **Save**.
+1. Open **System Settings**.
+2. Go to **Privacy & Security**.
+3. Scroll down and click **Open Anyway**.
+4. Confirm that you want to open Ergominder.
 
-If **Open** is unavailable, try opening Ergominder normally once, then go to **System Settings > Privacy & Security** and choose **Open Anyway**. Do not disable Gatekeeper. Apple explains this one-app exception in [Safely open apps on your Mac](https://support.apple.com/102445).
+The **Open Anyway** button shows up after macOS has blocked the app once. If you do not see it, try opening Ergominder from Applications, then return to **Privacy & Security**.
 
-Ergominder is distributed without an Apple Developer ID certificate and is not notarized by Apple, so macOS shows the warning above. Download it only from this repository's Releases page.
+**Older macOS**
+
+Right-click `Ergominder` in your Applications folder and choose **Open**, then choose **Open** again in the warning.
+
+**Terminal**
+
+You can also clear the quarantine flag macOS puts on downloaded apps, then open Ergominder as usual:
+
+```sh
+xattr -dr com.apple.quarantine /Applications/Ergominder.app
+```
+
+macOS shows the warning because Ergominder is a free app built by an independent developer, without a paid Apple signing certificate, and it is not notarized. Download it only from this repository's Releases page. Apple describes this one-app exception in [Safely open apps on your Mac](https://support.apple.com/102445).
+
+When the app opens, choose your reminder schedule and click **Save**.
 
 ## Use
 
